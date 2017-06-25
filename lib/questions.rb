@@ -7,9 +7,7 @@ end
 
 # keep only the elements that start with a vowel
 def select_elements_starting_with_vowel(array)
-  b = [];
-  array.map{|element| b<< element if element.start_with?('a', 'o', 'e', 'i', 'u')}
-  return b
+
 end
 
 # remove instances of nil (but NOT false) from an array

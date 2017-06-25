@@ -74,6 +74,14 @@ end
 # even numbers come first
 # so [1, 2, 3, 4, 5, 6] becomes [[2, 4, 6], [1, 3, 5]]
 def separate_array_into_even_and_odd_numbers(array)
+  odd_arr = []
+  even_arr = []
+  result = []
+  array.map do |element|
+    odd_arr << element if element.odd?
+      even_arr << element if element.even?
+  end
+  result << even_arr << odd_arr
 end
 
 # count the numbers of elements in an element which are palindromes
